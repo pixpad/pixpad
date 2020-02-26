@@ -4,21 +4,23 @@
 		<title>Pixpad. | Portfolio</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:20,100|Poppins:100,500&display=swap" rel="stylesheet"> 
-		<link type="text/css" href="https://cdn.jotfor.ms/before-after/before-after.min.css" rel="stylesheet">
-		<script type="text/javascript" src="https://cdn.jotfor.ms/before-after/before-after.min.js"></script>
+		<link rel='stylesheet prefetch' href='https://rawgit.com/koenoe/cocoen/master/dist/css/cocoen.min.css'>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+		<script src='https://cdn.rawgit.com/koenoe/cocoen/master/dist/js/cocoen.min.js'></script>
 	</head>
 	<body>
 		<h1>pixpad.</h1>
 		<p>This is a paragraph.</p>
-		<div class="ba-slider">
-		   <img src="http://i.imgur.com/BIHN8KQ.jpg">
-		   <div class="resize">
-		       <img src="http://i.imgur.com/nS6dvpq.jpg">
-		   </div>
-		   <span class="handle"></span>
+		<div class="cocoen">
+		  <img src="http://placehold.it/150/92c952" alt="">
+		  <img src="http://placehold.it/150/771796" alt="">
 		</div>
 	</body>
-<script type="text/javascript">
-  $('.ba-slider').beforeAfter();
-</script>
+	<script>
+		new Cocoen(document.querySelector('.cocoen'));
+
+		document.querySelectorAll('.cocoen').forEach(function(element){
+		  new Cocoen(element);
+		});
+	</script>
 </html> 
