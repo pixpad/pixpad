@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Page Title</title>
+		<title>Pixpad.</title>
 	</head>
 	<body>
 
 		<h1>This is a Heading</h1>
 		<p>This is a paragraph.</p>
+		<input type="range" oninput="myFunction(this.value)">                             
+		<p id="demo"></p>
 
 	</body>
+	<script>
+	function myFunction(val) {
+	  document.getElementById("demo").innerHTML = val; 
+	}
+	</script>
 </html> 
