@@ -4,19 +4,21 @@
 		<title>Pixpad. | Portfolio</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:20,100|Poppins:100,500&display=swap" rel="stylesheet"> 
-
+		<link type="text/css" href="https://cdn.jotfor.ms/before-after/before-after.min.css" rel="stylesheet">
+		<script type="text/javascript" src="https://cdn.jotfor.ms/before-after/before-after.min.js"></script>
 	</head>
 	<body>
-
 		<h1>pixpad.</h1>
 		<p>This is a paragraph.</p>
-    <div id="container">
-      <img src="img-before.png">
-      <img src="img-after.png">
-    </div>
-
+		<div class="ba-slider">
+		   <img src="http://i.imgur.com/BIHN8KQ.jpg">
+		   <div class="resize">
+		       <img src="http://i.imgur.com/nS6dvpq.jpg">
+		   </div>
+		   <span class="handle"></span>
+		</div>
 	</body>
-	<script>
-    $("#container").twentytwenty();
-	</script>
+<script type="text/javascript">
+  $('.ba-slider').beforeAfter();
+</script>
 </html> 
