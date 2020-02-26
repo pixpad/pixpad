@@ -27,7 +27,9 @@
 	</body>
 	<script>
 		document.addEventListener('DOMContentLoaded', function(){
-			new Cocoen();
+			document.querySelectorAll('.cocoen').forEach(function(element){
+				new Cocoen(element);
+			});
 		});
 	</script>
 </html> 
