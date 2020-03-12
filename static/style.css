@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,500|Poppins:100,500');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,500|Poppins:100,500,700');
 
 body {
 	background-color: rgb(240, 240, 240);
@@ -76,10 +76,10 @@ h2 {
 }
 
 h3 { 
-    font-size: 1.2em; 
+    font-size: 1em; 
     margin: 10px; 
     font-family: 'Poppins', sans-serif; 
-    font-weight: 500; 
+    font-weight: 700; 
 }
 
 p, li {
